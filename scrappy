@@ -4,11 +4,10 @@
 #description:simple webscrap tool for tag id and class
 
 #matching respective argument from the user
+[[ $# -eq 0 ]] && echo "Error:url not found" && exit 1
+
 totalArgs=$#
-if [ $totalArgs -eq 0 ]; then
-   echo "Error:url not found"
-   exit
-fi
+
 url=$1
 
 #checking for tag class and id
